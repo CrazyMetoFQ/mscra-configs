@@ -1,0 +1,205 @@
+/*html,body{
+
+	height: 99%;
+	width: 99%;
+
+}*/
+
+body{
+	background-color: slategray;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	overflow: auto;
+}
+
+
+#footer{
+
+	background-color: darkslategray;
+	padding: 5px;
+	margin: 2%;
+	margin-bottom: 50px;
+	width: 90vw;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	justify-content: space-around;
+	border: 1px dashed gray;
+	border-radius: 100px;
+}
+
+.footer-item{
+
+	display: flex;
+
+	padding: 2%;
+	margin: 2px;
+
+	/*background-color: dimgray;*/
+	text-decoration: none;
+	color: ghostwhite;
+	font-family: monospace;
+}
+
+.footer-item:hover{
+
+	background-color: darkolivegreen;
+	color: white;
+	border: thin groove navajowhite;
+
+
+}
+
+
+#formWrapper{
+
+	overflow: visible;
+	background-color: #f2f2f2;
+	width: 40vw;
+	min-width: fit-content;
+	max-width: 50vw;
+
+	margin-top: 1%;
+	margin-left: 2%;
+	margin-right: 2%;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: flex-start;
+
+
+
+	border-radius: 20px;
+	padding: 5%;
+
+	position: relative;
+
+
+}
+
+#formTitle{
+
+  font-family: monospace;
+  text-decoration: underline;
+  font-size: xx-large;
+
+  flex-shrink: 3;
+}
+
+
+.formGroup{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	align-items: center;
+
+	/*margin: 2%;*/
+	padding: 3%;
+}
+
+.sformLabel{
+
+	display: flex;
+	color: black;
+	font-size: large;
+	font-family: sans-serif;
+
+	/*  width: fit-content;
+	height: fit-content;*/
+	padding: 10px;
+	vertical-align: middle;
+
+
+}
+
+.sformInput{
+  
+  font-size: large;
+  font-family: cursive;
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  
+  display: flex;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  vertical-align: middle;
+
+}
+
+.sformOutput{
+
+
+  display: flex;
+
+  font-family: fantasy;
+  font-size: medium;
+
+  padding: 10px;
+  margin: 5px;
+  background-color: blanchedalmond;
+
+}
+
+
+.sformInput[type="checkbox"] {
+
+  height: 20px;
+  width: 20px;
+
+  /*display: inline;*/
+}
+
+select.sformInput{
+/*
+  height: 20px;
+  width: 20px;
+
+  display: inline;*/
+
+  background-color: floralwhite;
+}
+
+select.sformInput:hover{
+
+  background-color: skyblue;
+}
+
+
+.sformInput[type="range"] {
+
+  height: 20px;
+}
+
+
+.sformInput[type=submit] {
+
+  background-color: #4CAF50;
+  color: white;
+
+  padding: 14px 20px;
+
+  border: none;
+  cursor: pointer;
+}
+
+.sformInput[type=submit]:hover {
+
+  background-color: darkseagreen;
+}
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Chapter {{sno}}</title>
+
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='ch.css')}}">
+
+</head>
+
+<body>
+
+<!-- 	<div id="headbar">	
+	</div>
+ -->
+	<div id="img_container">
+		
+		{% for i in imli %}
+
+			<div class="ch-img-cnt">
+				<img src="{{i}}" alt="imgs" class="ch-img"/>
+			</div>
+
+		{% endfor %}
+
+
+	</div>
+
+	<div>
+
+		<a href="/chapter?chn={{sno-1}}" class="btn">Prev</a>
+		<a href="/chapter?chn={{sno+1}}" class="btn">Next</a>
+
+	</div>
+
+</body>
+</html>

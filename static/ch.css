@@ -1,0 +1,58 @@
+
+html,body{
+
+	background-color: darkslategray;
+	overflow: auto;
+
+	/*display: flex;
+	flex-direction: column;
+	align-items: center;*/
+}
+
+#headbar{
+
+	margin: 0;
+	display: inline;
+	width: 100%;
+	height: 7vh;
+	background-color: cornflowerblue;
+}
+
+#img_container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 50%;
+	margin: 5%;
+	background-color: lightgray;
+	/*width: 100%;*/
+}
+
+.ch-img-cnt{
+	margin: 2px;
+	position: relative;
+	
+} 
+
+.ch-img{
+	width: 100%;
+	height: auto;
+}
+
+.btn{
+
+	padding: 15px;
+	border: thick groove navajowhite;
+	background-color: cornflowerblue;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	font-size: xx-large;
+}
+
+.btn:hover{
+	background-color: lightcoral;
+}

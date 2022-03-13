@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css' ) }}">
+
+	<link rel="stylesheet" type="text/css" href=" {{url_for('static', filename='form.css')}} ">
+
+	<title>{{title_text}}</title>
+
+</head>
+
+<body>
+
+	<div id="formWrapper">
+		
+		<p id = "formTitle"> {{header_text}} </p>
+		<br>
+		<form method="POST">
+
+			<div>
+				{{aform.hidden_tag()}}
+			</div>
+
+			<div>
+				{% for k in atz %}
+					<p class="formGroup">
+						
+						{{atz[k].label(class_="sformLabel")}}
+						{{atz[k](class_="sformInput", value=cofn[k.replace("raw_","")]["content"])}}
+						
+						{% if atz[k].data != None %}
+							<span class="sformOutput">{{atz[k].data}}</span>
+
+						{% endif %}
+	
+					</p>
+
+				{%endfor%}
+
+			</div>
+			
+			<div>
+				<br>
+				{{aform.sumbit(class_="sformInput")}}
+			</div>
+
+		</form>
+
+	</div>
+
+
+	<div id="footer"> 
+	
+		<a href="{{ url_for('home') }}" class="footer-item">
+			Home Page 
+		</a>
+
+		<a href="/ty" class="footer-item"> 
+			ty
+		</a> 
+
+		<a href="{{(url_for('supa_form', ty='basic'))}}" class="footer-item">
+			Basic Forms
+		</a>	                                               
+		<a href="{{url_for('supa_form', ty='main')}}" class="footer-item">
+			Main Forms
+		</a>	
+
+
+	</div>
+
+
+</body>
+</html>
+
+

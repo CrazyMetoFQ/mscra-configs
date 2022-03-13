@@ -1,0 +1,81 @@
+
+.big_txt{
+
+	font-size: xx-large;
+}
+
+.spacer{
+	
+	padding: 5px;
+	margin: 5px;
+	width: 5px;
+
+}
+
+.rLks{
+
+  font-size: 20px;
+  background-color: azure;
+  width: fit-content;
+  padding: 10px;
+}
+
+.error{
+
+  font-size: medium;
+  font-family: monospace;
+
+  padding: 15px;
+  margin: 10px;
+
+  background-color: tomato;
+  color: white;
+
+}
+
+.flexContainer{
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.flexItem{
+
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+
+  color: green;
+
+}
+
+
+/*links*/
+.spL{
+
+	  text-decoration: none;
+}
+
+/* unvisited link */
+.spL:link {
+  color: chocolate;
+
+}
+
+/* visited link */
+.spL:visited {
+  color: limegreen;
+
+}
+
+/* mouse over link */
+.spL:hover {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+/* selected link */
+.spL:active {
+  color: blue;
+}
